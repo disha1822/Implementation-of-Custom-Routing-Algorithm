@@ -48,8 +48,7 @@ def forward():
         finally:
             forward_conn.close()
         time.sleep(5)
-
-ipPercCentralityMap = {"10.128.0.2":0.2,"10.128.0.3":0.2 ,"10.128.0.4":0 ,"10.128.0.5":0.366667,"10.128.0.6":0,"10.12$
+ipPercCentralityMap = {"10.128.0.2":0.2,"10.128.0.3":0.2 ,"10.128.0.4":0 ,"10.128.0.5":0.366667,"10.128.0.6":0,"10.128.0.7":0,"10.128.0.8":0.633333}
 sortedIpList = list(dict(sorted(ipPercCentralityMap.items(), key=lambda item: item[1],reverse=True)).keys())
 
 forward()
